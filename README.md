@@ -11,7 +11,7 @@ Airlines face challenges such as overbooking, manual errors, inefficient crew sc
 
 
 
-[![View Project PDF](https://img.shields.io/badge/VIEW_PROJECT_PDF-blue?style=for-the-badge)](SF_PHASE1.pdf)
+[![View Project PDF](https://img.shields.io/badge/VIEW_PROJECT_PDF-blue?style=for-the-badge)](SF_PHASE_1.pdf)
 
 
 ## Phase 2 : Org Setup & Configuration
