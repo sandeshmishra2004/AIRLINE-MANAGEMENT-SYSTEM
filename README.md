@@ -1,10 +1,11 @@
 ✈️ Salesforce Airline Management System (AMS)
 
 
-Developer Edition – Free Org Project
+Developer Edition –  Org Project
 
 
 A Salesforce-based Airline Management System (AMS) designed and implemented on Developer Edition (Free). The project simulates a lightweight CRM solution for airlines, focusing on ticket booking, passenger management, flight scheduling, and refunds — optimized to fit within free org limits.
+
 
 🛑 Problem Statement
 
@@ -14,16 +15,73 @@ Airlines face challenges in efficiently managing day-to-day operations such as f
 
 Key challenges:
 
-    Manual and fragmented booking process.
+• Manual and fragmented booking process.
 
-    Difficulty in tracking flight schedules and seat availability.
+• Difficulty in tracking flight schedules and seat availability.
 
-    Inefficient management of passenger information.
+• Inefficient management of passenger information.
 
-    Complex and time-consuming refund requests.
+• Complex and time-consuming refund requests.
 
-    Limited visibility for stakeholders in a single platform.
+• Limited visibility for stakeholders in a single platform.
 
+
+⸻
+
+
+✅ Solution (using Salesforce Developer Edition)
+
+
+To overcome these challenges, we propose an Airline Management System (AMS) built on Salesforce CRM. The solution leverages Salesforce’s cloud-based platform to centralize and automate processes, ensuring real-time access, better transparency, and improved customer experience.
+
+
+Core Features of the Solution:
+
+1. Flight Scheduling Management
+
+• Custom objects for Flights, Routes, and Schedules.
+
+• Real-time updates for flight timings and availability.
+
+2. Ticket Booking System
+
+• Booking agents can create and manage bookings directly in Salesforce.
+
+• Automation rules to confirm seats and generate booking records.
+
+3. Passenger Information Management
+
+• Store passenger details under Contact records.
+
+• Easily track travel history, bookings, and preferences.
+
+4. Refund & Cancellation Handling
+
+• Workflow/Approval process for refund requests.
+
+• Automated status updates to agents and passengers.
+
+5. Dashboards & Reports
+
+• Admin dashboards for total bookings, flight occupancy, and cancellations.
+
+• Agent dashboards for managing assigned passengers and flights.
+
+
+⸻
+
+
+🎯 Expected Benefits
+
+• Streamlined booking and scheduling process.
+
+• Centralized passenger database with easy access.
+
+• Reduced manual errors and faster refunds.
+
+• Better decision-making with real-time dashboards.
+
+• Improved customer experience and airline efficiency.
 
 ⸻
 
