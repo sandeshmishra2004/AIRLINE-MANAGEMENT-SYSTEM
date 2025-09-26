@@ -6,6 +6,24 @@ Developer Edition – Free Org Project
 
 A Salesforce-based Airline Management System (AMS) designed and implemented on Developer Edition (Free). The project simulates a lightweight CRM solution for airlines, focusing on ticket booking, passenger management, flight scheduling, and refunds — optimized to fit within free org limits.
 
+🛑 Problem Statement
+
+
+Airlines face challenges in efficiently managing day-to-day operations such as flight scheduling, ticket booking, passenger data management, and handling cancellations/refunds. Traditional systems are often siloed, making it difficult for agents and administrators to track real-time information. Passengers also face delays in updates, lack of transparency in booking/refunds, and poor customer experience.
+
+
+Key challenges:
+
+    Manual and fragmented booking process.
+
+    Difficulty in tracking flight schedules and seat availability.
+
+    Inefficient management of passenger information.
+
+    Complex and time-consuming refund requests.
+
+    Limited visibility for stakeholders in a single platform.
+
 
 ⸻
 
