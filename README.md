@@ -1,28 +1,211 @@
-# AIRLINE-MANAGEMENT-SYSTEM
-Airlines face challenges such as overbooking, manual errors, inefficient crew scheduling, and poor passenger experience due to fragmented systems. Passengers demand seamless services like online booking, e-tickets, and real-time updates, while airlines require centralized control over flight schedules, reservations, maintenance, and reporting.
-
-## Phase 1 : Problem Understanding & Industry Analysis
-
-- Requirement Gathering
-- Stakeholder Analysis
-- Business Process Mapping
-- Industry-specific Use Case Analysis
-- AppExchange Exploration
+✈️ Salesforce Airline Management System (AMS)
 
 
+Developer Edition – Free Org Project
 
-[![View Project PDF](https://img.shields.io/badge/VIEW_PROJECT_PDF-blue?style=for-the-badge)](SF_PHASE_1.pdf)
+
+A Salesforce-based Airline Management System (AMS) designed and implemented on Developer Edition (Free). The project simulates a lightweight CRM solution for airlines, focusing on ticket booking, passenger management, flight scheduling, and refunds — optimized to fit within free org limits.
 
 
-## Phase 2 : Org Setup & Configuration
+⸻
 
-- Salesforce Editions
-- Company Profile Setup
-- Business Hours & Holidays
-- Fiscal Year Settings
-- User Setup & Licenses
-- Profiles
-- Roles
-- Permission Sets : will decided as devlop furthur
-- OWD
-- Login Access Policies
+
+📌 Phase 1: Problem Understanding & Industry Analysis
+
+
+Scope:
+
+• Ticket Booking
+
+• Flight Scheduling
+
+• Passenger Management
+
+• Refund Requests
+
+
+Stakeholders:
+
+• Admin (System Owner)
+
+• Booking Agent (Internal Salesforce User)
+
+• Passenger (Contact Records only, no login access)
+
+
+Assumptions:
+
+• Single airline (Skyline Airlines).
+
+• Limited demo routes and flights.
+
+
+⸻
+
+
+📌 Phase 2: Org Setup & Configuration
+
+• Edition: Salesforce Developer Edition (Free).
+
+• Company Profile → Skyline Airlines.
+
+• Users → Admin + 1 Booking Agent.
+
+• Roles & Profiles: Admin, Airline Staff (Agent).
+
+• OWD: Flights = Public, Bookings = Private.
+
+• Change Management: No sandbox → use Unmanaged Package/Change Sets.
+
+
+⸻
+
+
+📌 Phase 3: Data Modeling & Relationships
+
+
+Custom Objects:
+
+• ✈️ Flight
+
+• 🎟️ Booking
+
+• 💳 Ticket
+
+• 💰 Payment
+
+
+Standard Object Extension:
+
+• 👤 Passenger → Contact (with custom fields: Passport No., DOB, Nationality).
+
+
+⸻
+
+
+📌 Phase 4: Process Automation
+
+• Validation Rules → Prevent overbooking (capacity check).
+
+• Flows →
+
+• Auto-create Ticket on Booking confirmation.
+
+• Send booking confirmation email.
+
+• Auto-cancel Booking if Payment not received within 24 hrs.
+
+
+⸻
+
+
+📌 Phase 5: Apex Programming
+
+• Triggers:
+
+• Update available seats after Booking.
+
+• Prevent duplicate bookings.
+
+• Batch Apex: Archive old flights.
+
+• Future Method: Async notifications (demo).
+
+• Test Classes: >75% coverage.
+
+
+⸻
+
+
+📌 Phase 6: User Interface
+
+• Lightning App: Airline Agent Console.
+
+• Record Pages: Passenger 360° view (Bookings, Tickets, Payments).
+
+• LWCs:
+
+• Flight Search.
+
+• Seat Selection (demo).
+
+• Flight Status Board.
+
+
+⸻
+
+
+📌 Phase 7: Integration
+
+• REST Apex Class → Book Flight API (demo).
+
+• Platform Events → Flight Delay Alerts.
+
+• Mock external payment system (not live).
+
+
+⸻
+
+
+📌 Phase 8: Data Management
+
+• Demo data: 10 Flights, 20 Passengers, 15–20 Bookings.
+
+• Duplicate Rules for Passengers.
+
+• Backup: Unmanaged Package.
+
+
+⸻
+
+
+📌 Phase 9: Reporting & Security
+
+
+Reports:
+
+• Bookings by Flight
+
+• Revenue by Flight
+
+• Passenger Trends
+
+
+Dashboards:
+
+• Flight Occupancy
+
+• Monthly Revenue
+
+
+Security:
+
+• Role Hierarchy: Admin > Agent
+
+• Audit Trail enabled
+
+
+⸻
+
+
+📌 Phase 10: Demo & Presentation
+
+
+End-to-End Demo Flow:
+
+• Passenger record → Booking → Ticket auto-created → Payment recorded.
+
+• Automated Flows + Apex execution.
+
+• Dashboards: Flight Occupancy & Revenue.
+
+
+Deliverables:
+
+• ERD Diagram
+
+• Flow Screenshots
+
+• Apex Code (Triggers, Batch, REST, Tests)
+
+• Dashboards
